@@ -4,5 +4,4 @@ At runtime, the very first thing the game does at initialization is create the g
 
 
 [![Display Window](assets/display_window.png)](https://github.com/bluemau-dev)
-
-'def __init__(self):'
+<h1>'def __init__(self):'</h1>
