@@ -3,5 +3,5 @@ class Setting:
         # Screen settings
         self.screen_width = 1200
         self.screen_height = 800
-        self.bg_color = (0,0,0)
+        self.bg_color = (0,220,255)
         self.caption = "Yoda's Alien Invasion"

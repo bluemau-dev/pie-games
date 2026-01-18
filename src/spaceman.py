@@ -9,7 +9,7 @@ class Spaceman:
         self.image = pygame.image.load('assets/spaceship.bmp')
         self.image = pygame.transform.scale(self.image,(64,64))
         self.rect = self.image.get_rect()
-        self.rect.midtop = self.screen_rect.midtop
+        self.rect.center = self.screen_rect.center
 
     def blitme(self):
         """Draw the Spaceman"""

@@ -29,4 +29,5 @@ An object class can refer to a game object such as a player, enemy, or a literal
 
 |Function                         |Description                                                |
 |---------------------------------|-----------------------------------------------------------|
-|pygame.blit()                    |Method to draw the image                                   |
+|pygame.blit()                    |Method to draw the image to screen                         |
+|pygame.transform.scale(surface())|Transform the scale of the object in (x,y) amount of pixels|
