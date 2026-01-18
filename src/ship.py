@@ -8,6 +8,8 @@ class Ship:
         self.screen = ai_game.screen
         self.screen_rect = ai_game.screen.get_rect()
 
+        self.settings = ai_game.setting
+
         # Load the ship image and get its rect
         self.image = pygame.image.load('assets/ship.bmp')
         self.image = pygame.transform.scale(self.image, (64,64))
@@ -16,13 +18,21 @@ class Ship:
         # Start each new ship at the bottom center of the screen
         self.rect.midbottom = self.screen_rect.midbottom
 
+        # Store a decimal value for the ship's horizontal position
+        self.x = float(self.rect.x)
+
         # Movement Flag
-        self.is_moving = False
+        self.is_moving_right = False
+        self.is_moving_left = False
     
     def update(self):
         """Update the ship's position based on the movement flag."""
-        if self.is_moving:
-            self.rect.x += 1
+        if self.is_moving_right:
+            self.x += self.settings.ship_speed
+        if self.is_moving_left:
+            self.x -= self.settings.ship_speed
+            
+        self.rect.x = self.x
 
     def blitme(self):
         """Draw the ship at its current location."""

@@ -5,3 +5,5 @@ class Setting:
         self.screen_height = 800
         self.bg_color = (0,220,255)
         self.caption = "Yoda's Alien Invasion"
+
+        self.ship_speed = 1.5

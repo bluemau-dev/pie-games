@@ -31,3 +31,8 @@ An object class can refer to a game object such as a player, enemy, or a literal
 |---------------------------------|-----------------------------------------------------------|
 |pygame.blit()                    |Method to draw the image to screen                         |
 |pygame.transform.scale(surface())|Transform the scale of the object in (x,y) amount of pixels|
+
+### Responding to a Keypress
+Keypress is registered in Pygame as an event. If we want our game object to do something in particular during a keypress then we must let that event happen in our event method. Specifying which key is pressed down will return true depending on if it was pressed or not. In addition, there are commands to check if a key is no longer being pressed down.
+
+In our game object, we added an update method and boolean value to determine if the game object is being moved when a key input is triggered.
