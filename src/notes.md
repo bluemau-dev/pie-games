@@ -16,3 +16,21 @@
         * Player Velocity
         * Background Color
         * Any interchangeable values
+
+4. Creating a Bullet Class
+    - Bullets are a Rect that are triggered by the player during an event and travel straight up the scrteen until they disappear off the top of the screen.
+        * To create a Bullet.py file, first we need to add some settings for our bullet in our Settings.py:
+            - Dimensions of Rect (Width and Height)
+            - Bullet Speed
+            - Bullet Color
+    - Create a Bullet class in 'Bullet.py'
+        * Our Bullet class will inherit from Sprite, which we import from 'pygame.sprite' module.
+        * To create a bullet instance, '__init__()' needs the current instance of AlienInvasion, and we call 'super()' to inherit properly from Sprite. 
+        * We also reference Settings to get the proper attributes of our bullets from the settings objects. 
+        
+### Pygame Objects
+
+1. Rect - contains helpful methods that represent a rectangle area. Rectangles are created from the 'pygame.Rect()' function. For more useful information, follow this link: https://www.pygame.org/ftp/contrib/pygame_docs.pdf on page 67/88 to read more about Rect's.
+
+    * Rect -> Integers only
+    * Store positions as a float so we can move objects accurately, then copy that value into the Rect because pygame requires integers.
